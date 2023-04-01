@@ -11,6 +11,7 @@ import {
 } from "react-bootstrap";
 import "./Profile.css";
 import { useState } from "react";
+import medal from "./medal.png";
 
 const userData = {
   firstName: "Sri Harsha",
@@ -256,7 +257,7 @@ function Profile() {
                   </Form.Group>
                 </Form>
               </Tab.Pane>
-              <Tab.Pane eventKey="#link4">
+              <Tab.Pane eventKey="#link4" className="reward-points-container">
                 <p className="label-headings">Reward Points</p>
                 <p className="label-headings">
                   Points:{" "}

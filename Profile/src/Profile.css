@@ -38,3 +38,10 @@
   color: #000;
   margin-bottom: 0.5rem;
 }
+.reward-points-container {
+  background-image: url("./medal.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+}
