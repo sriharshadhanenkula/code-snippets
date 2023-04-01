@@ -1,0 +1,40 @@
+.cover-image {
+  height: 200px;
+  width: 100%;
+  background-image: url("./cover.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+}
+
+.profile-card {
+  margin-top: -4%;
+  background-image: url("./avatar6.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+
+  height: 180px;
+  width: 180px;
+  margin-left: 2%;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.label-headings {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+.label-text {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 0.5rem;
+}
