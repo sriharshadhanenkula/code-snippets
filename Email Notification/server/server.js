@@ -31,16 +31,14 @@ app.post("/sendEmail", async (req, res) => {
     to: email,
     subject: subject,
     //text: message,
-    html: paymentTemplate({ name: "John Doe" }), // change the template to emailTemplate if you want to send email
-
-    // below is the code for sending attachments for payment
-    // attachments: [
-    //   {
-    //     filename: "payment.png",
-    //     path: "https://res.cloudinary.com/dp6ofrbni/image/upload/v1681933499/WhatsApp_Image_2023-04-17_at_7.41.55_PM_eom1cl.jpg",
-    //     cid: "nosh-icon@nosh.com", // this is used as the src attribute in the HTML
-    //   },
-    // ],
+    html: paymentTemplate({
+      name: "John Doe",
+      orderItems: [
+        { name: "Pizza", price: "$10.99" },
+        { name: "Salad", price: "$5.99" },
+      ],
+      total: "$16.98",
+    }),
   };
 
   mailTransporter.sendMail(mailDetails, (error) => {
